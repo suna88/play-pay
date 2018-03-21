@@ -1,0 +1,19 @@
+<div class="form-space">
+  <h3 class="title">Sign Up</h3>
+  <%= form_for(@user) do |f| %>
+      <div class="form-box">
+        <%= f.label :name %>
+        <%= f.text_field :name,{class:'form'} %>
+      </div>
+      <div class="form-box">
+        <%= f.label :email %>
+        <%= f.email_field :email,{class:'form'} %>
+      </div>
+      <div class="form-box">
+        <%= f.label :password %>
+        <%= f.password_field :password,{class:'form'} %>
+      </div>
+      <%= f.submit 'Sing Up',{class:'button'} %>
+  <% end %>
+
+</div>

@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="bar">
+    <%= image_tag 'PlayPay.png', {class: 'logo'} %>
+    <div class="menu">
+      <%= link_to '簡単売買', support_path, {class: 'block'} %>
+      <%= link_to '取引', support_path, {class: 'block'} %>
+      <%= link_to 'お問い合わせ', support_path, {class: 'block'} %>
+      <%= link_to 'More', support_path, {class: 'block'} %>
+      <% if logged_in? %>
+          <%= link_to 'ログアウト', logout_path, {class: 'block'} %>
+      <% else %>
+          <%= link_to 'ログイン', login_path, {class: 'block'} %>
+      <% end %>
+      <%= link_to '無料会員登録', qa_path, {class: 'block'} %>
+      <%= link_to '日本語', support_path, {class: 'block'} %>
+      <% if logged_in? %>
+          <%= link_to 'Wallet', user_path(current_user), {class: 'block'} %>
+      <% end %>
+    </div>
+  </div>
+</div>

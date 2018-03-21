@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PlayPay</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://d2p8taqyjofgrq.cloudfront.net/css/bootstrap.min.css?ver=3.3.4">
+</head>
+
+<body>
+<%= render 'tops/header' %>
+<div>
+  <%= yield %>
+  <%= render 'tops/footer' %>
+</div>
+</body>
+</html>
