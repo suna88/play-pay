@@ -1,19 +1,19 @@
 <div class="form-space">
-  <h3 class="title">Sign Up</h3>
+  <h3 class="title">ユーザー登録</h3>
   <%= form_for(@user) do |f| %>
       <div class="form-box">
-        <%= f.label :name %>
-        <%= f.text_field :name,{class:'form'} %>
+        <label class="form-label">お名前</label>
+        <%= f.text_field :name, {class: 'form'} %>
       </div>
       <div class="form-box">
-        <%= f.label :email %>
-        <%= f.email_field :email,{class:'form'} %>
+        <label class="form-label">メールアドレス</label>
+        <%= f.email_field :email, {class: 'form'} %>
       </div>
       <div class="form-box">
-        <%= f.label :password %>
-        <%= f.password_field :password,{class:'form'} %>
+        <label class="form-label">パスワード</label>
+        <%= f.password_field :password, {class: 'form'} %>
       </div>
-      <%= f.submit 'Sing Up',{class:'button'} %>
+      <%= f.submit '登録', {class: 'button'} %>
   <% end %>
 
 </div>

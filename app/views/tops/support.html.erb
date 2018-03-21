@@ -1,10 +1,36 @@
-<h3 class="title"><span class="red">S</span>upport</h3>
-<div class="content">
-  <div class="contact">
-  <form class="">
-    <h4>contact</h4>
-    <textarea class="textarea"></textarea>
-  </form>
-  </div>
+<div class="common-content">
+  <h3 class="title">お問い合わせ</h3>
+  <p class="alert">お問い合わせの前に</p>
+  <%= link_to 'よくあるご質問', qa_path, {class: 'link'} %>
 
+  <ul class="qa">
+    <li class="qa-list"><span class="arrow"></span><a class="ps">パスワードを忘れた方</a></li>
+    <li class="qa-list"><span class="arrow"></span><a class="ps">ログインができなくなった</a></li>
+    <li class="qa-list"><span class="arrow"></span><a class="ps">入金が反映されない</a></li>
+  </ul>
+
+  <div class="contact-content">
+    <div class="space">
+      <p>お問い合わせ内容</p>
+      <select>
+        <option selected disabled>-</option>
+        <option>簡単売買</option>
+        <option>取引</option>
+        <option>日本円入金</option>
+        <option>アメリカドル入金</option>
+        <option>日本円出金</option>
+        <option>PlayCoin出金</option>
+        <option>簡単売買</option>
+      </select>
+    </div>
+    <div class="space">
+      <p>メールアドレス</p>
+      <input type="email" placeholder="メールアドレス">
+    </div>
+    <div class="space">
+      <p>本文</p>
+      <textarea placeholder="お問い合わせ内容を記載してください"></textarea>
+    </div>
+    <button class="button">送信</button>
+  </div>
 </div>

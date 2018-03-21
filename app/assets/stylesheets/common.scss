@@ -1,53 +1,137 @@
-.form-space {
-  text-align: center;
-
-  width: 300px;
-  margin: auto;
+.common-content {
+  padding: 50px 400px;
+  color: rgba(80, 80, 80, 1);
 
   .title {
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    color: rgba(80, 80, 80, 1);
+    margin: 50px 0;
+  }
+
+  .qa {
+    .qa-list {
+      margin: 10px 0;
+    }
+  }
+
+  .alert {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .link {
+    margin: 10px;
+  }
+
+  .ps {
+    margin: 0 10px;
+  }
+
+  .arrow {
+    border-top: 3px solid rgb(3, 155, 229);
+    border-right: 3px solid rgb(3, 155, 229);
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+  }
+
+  .contact-content {
+    .space {
+      margin: 30px 0;
+      select {
+        width: 400px;
+        height: 30px;
+        padding: 5px;
+      }
+      input {
+        width: 100%;
+        height: 30px;
+      }
+      textarea{
+        width: 100%;
+        height: 200px;
+      }
+    }
+    .button{
+      width: 70px;
+      font-size: 18px;
+      color: #F7F7F7;
+      height: 44px;
+      background-color: rgb(3, 155, 229);
+      margin-bottom: 50px;
+    }
   }
 }
 
-.form {
-  border: solid 1px lightgray;
-  margin: 0 10px;
+.form-space {
+  text-align: center;
+  padding: 50px 400px;
+
+  color: rgba(80, 80, 80, 1);
+  .title {
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    color: rgba(80, 80, 80, 1);
+    margin: 50px 0;
+  }
+
+  .form {
+    border: solid 1px lightgray;
+    margin: 0 10px;
+  }
+  .form-box {
+    margin: 20px;
+
+    .form-label {
+      font-size: 15px;
+      width: 150px;
+      display: inline-block;
+    }
+  }
+  .button {
+    width: 60%;
+    font-size: 18px;
+    color: #F7F7F7;
+    height: 44px;
+    background-color: rgb(3, 155, 229);
+    margin-bottom: 50px;
+  }
 }
 
-.form-box {
-  display: flex;
-  justify-content: flex-end;
-}
+.wallet {
 
-.wallet{
-
-  .title{
+  .title {
     margin: 10px;
   }
   height: 700px;
-  margin:  auto;
+  margin: auto;
   width: 60%;
-  background-color: rgba(240,240,240,1);
+  background-color: rgba(240, 240, 240, 1);
   box-sizing: border-box;
 
-  .table{
+  .table {
     padding: 10px 30px;
   }
 }
 
-
-.title{
+.title {
   font-size: 24px;
-  border-bottom:1px solid lightgray;
+  border-bottom: 1px solid lightgray;
   margin: 50px 150px;
 
 }
 
-.red{
-  color: rgba(200,120,120,0.5);
+.red {
+  color: rgba(200, 120, 120, 0.5);
 }
 
 .contact {
- text-align: center;
+  text-align: center;
 
   .textarea {
     width: 400px;

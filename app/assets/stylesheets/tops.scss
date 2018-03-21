@@ -50,6 +50,11 @@
         height: 100%;
         padding: 15px;
         font-size: 13px;
+        text-decoration: none;
+      }
+      .block:hover{
+        color: #F7F7F7;
+
       }
     }
   }
@@ -64,7 +69,7 @@
     text-shadow: 2px 2px 9px gray;
     padding: 150px;
     .wrap-title {
-      margin-bottom: 200px;
+      margin-bottom: 100px;
     }
     .content {
       display: flex;
@@ -88,18 +93,18 @@
 
       }
       .right-content {
-        flex-basis: 45%;
-        margin: 150px 50px;
+        flex-basis: 40%;
+        margin: 100px 50px;
         background-color: rgba(255, 255, 255, 0.8);
         height: 300px;
-        padding: 0 50px;
+        padding: 50px;
         .catch {
           color: rgb(51, 122, 183);
 
         }
         .email-form {
-          width: 100%;
-          height: 24px;
+          width: 80%;
+          height: 30px;
           padding: 3px;
           margin: 20px auto;
         }
@@ -327,9 +332,9 @@
   .row {
     border-top: 2px solid white;
     display: flex;
+    justify-content: space-between;
     .box {
-      width: 300px;
-      margin:10px 20px 0 20px ;
+      width: 250px;
       color: gray;
       li{
         font-size: 12px;
@@ -342,7 +347,7 @@
       }
       >img{
         width: 50%;
-        height: 50px;
+        height: 40px;
       }
       p{
         color:gray;
@@ -352,3 +357,4 @@
     }
   }
 }
+
