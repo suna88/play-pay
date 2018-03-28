@@ -1,5 +1,5 @@
 server '52.199.80.228', user: 'suna', roles: %w{app db web}
-set :ssh_options, keys: '~/.ssh/suna_key_rsa'
+set :ssh_options, keys: '~/.ssh/play_key_rsa'
 
 # server-based syntax
 # ======================
