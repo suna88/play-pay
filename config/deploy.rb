@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock '3.4.0'
+lock "~> 3.4.0"
 
 set :application, "play-pay"
 set :repo_url, "git@github.com:suna88/play-pay.git"
