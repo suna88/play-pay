@@ -208,7 +208,7 @@ function initializeApp(defaultAccount, contract, name, symbol, balance) {
 '    </div>\n' +
 '  </div>\n' +
 '</div>',
-        
+
             data: function () {
                 return {
 

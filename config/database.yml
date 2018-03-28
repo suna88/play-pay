@@ -24,4 +24,4 @@ test:
 
 production:
   <<: *default
-  database: db/production_play-pay
+  database: db_playpay
