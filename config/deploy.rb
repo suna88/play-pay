@@ -9,7 +9,7 @@ set :repo_url, "git@github.com:suna88/play-pay.git"
 set :branch, 'master'
 
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/rails'
+set :deploy_to, '/var/www/play-pay'
 
 # シンボリックリンクをはるファイル。(※後述)
 set :linked_files, fetch(:linked_files, []).push('config/secrets.yml')
