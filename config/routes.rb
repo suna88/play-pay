@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'qa', to:'tops#qa'
   get 'support', to:'tops#support'
 
+  resources :trades
+
 
   root 'tops#top'
 

@@ -52,7 +52,7 @@
         font-size: 13px;
         text-decoration: none;
       }
-      .block:hover{
+      .block:hover {
         color: #F7F7F7;
 
       }
@@ -336,7 +336,7 @@
     .box {
       width: 250px;
       color: gray;
-      li{
+      li {
         font-size: 12px;
         line-height: 2;
       }
@@ -345,12 +345,12 @@
         padding: 10px 0;
         border-bottom: 1px lightgray solid;
       }
-      >img{
+      > img {
         width: 50%;
         height: 40px;
       }
-      p{
-        color:gray;
+      p {
+        color: gray;
         font-size: 11px;
       }
 
@@ -358,3 +358,121 @@
   }
 }
 
+.trade-title-space {
+  background-color: #EFEFEF;
+  margin: 50px 50px 0;
+  padding: 0 300px;
+  width: 100%;
+  height: 50px;
+  .title-bar {
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    line-height: 50px;
+    background-color: white;
+    font-size: 20px;
+    > span {
+      color: rgb(219, 135, 33);
+      font-size: 24px;
+    }
+
+  }
+}
+
+.easy-trade {
+  padding: 30px 250px;
+  display: flex;
+  justify-content: center;
+
+  .box {
+    margin: 50px;
+    width: 30%;
+    border-radius: 2px;
+    .upper {
+      padding: 10px 35px 0 35px;
+      text-align: center;
+
+      .price {
+        color: white;
+        padding: 10px 16px;
+        font-size: 15px;
+        border-radius: 5px;
+        span {
+          font-size: 12px;
+          background-color: white;
+          border-radius: 10px;
+          padding: 2px 5px;
+        }
+      }
+      .button {
+        font-size: 17px;
+        width: 80%;
+        color: white;
+        margin-top: 20px;
+        padding: 10px;
+        box-shadow: 1px 1px 1px gray;
+
+      }
+
+    }
+
+    .box-title {
+      text-align: left;
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+
+}
+
+.red {
+  background-color: #c9302c;
+  >span{
+    color:  #c9302c;;
+  }
+}
+
+.light-red{
+  text-align: center;
+  background-color:#ffe7e6 ;
+  padding: 0 20px;
+  h2{
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 10px;
+    > span {
+      color: #c9302c;
+    }
+  }
+}
+
+
+.middle-red {
+  background-color: #fdd6d5;
+}
+
+.blue {
+  background-color: #5bc0de;
+  >span{
+    color: #5bc0de;
+  }
+}
+
+.middle-blue{
+  background-color: #c2ebf8;
+}
+
+.light-blue {
+  text-align: center;
+  padding: 0 20px;
+  background-color: #dbf6fe;
+  h2{
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom:0 ;
+    > span {
+      color: #c9302c;
+    }
+  }
+
+}
