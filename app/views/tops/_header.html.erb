@@ -19,7 +19,7 @@
       <% end %>
       <%= link_to '日本語', root_path, {class: 'block'} %>
       <% if logged_in? %>
-          <%= link_to 'Account', user_path(current_user), {class: 'block'} %>
+          <%= link_to 'Account', mypage_path, {class: 'block'} %>
       <% end %>
     </div>
   </div>

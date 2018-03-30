@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only:[:show,:edit, :update]
+  before_action :set_user, only: [:show, :edit, :update]
 
   def new
     @user = User.new
@@ -19,6 +19,16 @@ class UsersController < ApplicationController
   end
 
   def show
+    if current_user.admin == 1 || current_user == @user
+      @valid_trades = @user.trades.where(status: 1).order(:created_at)
+      @done_trades = @user.trades.where(status: 2).order(:created_at)
+    else
+      redirect_to root_path
+    end
+
+  end
+
+  def mypage
     @user = current_user
     @valid_trades = @user.trades.where(status: 1).order(:created_at)
     @done_trades = @user.trades.where(status: 2).order(:created_at)
@@ -45,7 +55,7 @@ class UsersController < ApplicationController
   end
 
   def set_user
-      @user = User.find(params[:id])
+    @user = User.find(params[:id])
   end
 
 end

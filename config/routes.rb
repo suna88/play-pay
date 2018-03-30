@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
 
   resources :users
+  get 'mypage', to:'users#mypage'
 
   namespace :admin do
     get 'top',to:'tops#top'
