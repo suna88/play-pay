@@ -1,0 +1,11 @@
+<div class="explanation">
+  <h3 class="title">管理者ページ</h3>
+  <ul>
+    <li><%= link_to 'ユーザー一覧', admin_users_path %></li>
+    <li><%= link_to 'コイン情報編集', new_admin_coin_path  %></li>
+  </ul>
+  <div>
+    <h4>コイン情報</h4>
+    現在の価格: <%= Coin.last.buy_price_per_yen %>　円/PC
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="form-space">
+  <h2 class="title">コイン情報編集</h2>
+  <%= form_for @coin, :url => {:action => 'create'} do |f| %>
+      <div class="form-box">
+        客が買う金額: <%= f.number_field :buy_price_per_yen ,{class:'form'}%>yen/pc
+      </div>
+      <%= f.submit '変更'%>
+  <% end %>
+</div>

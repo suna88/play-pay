@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    get 'coins/edit'
+  end
+
   resources :users
+
+  namespace :admin do
+    get 'top',to:'tops#top'
+    resources :users,only:[:index]
+    resources :coins,only:[:new,:create]
+  end
+
 
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
@@ -11,7 +22,6 @@ Rails.application.routes.draw do
 
   resources :trades
 
-  get 'confirm',to: 'trades#confirm'
 
 
   root 'tops#top'

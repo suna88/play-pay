@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  buy_price_per_yen: 1
+
+two:
+  buy_price_per_yen: 1

@@ -1,0 +1,25 @@
+<div class="confirm">
+  <h2 class="title">Confirm</h2>
+  <p>申請内容をご確認ください。</p>
+  <br>
+  <table width="400px" border=”1″>
+    <tr align="center" height="40">
+      <th>種類</th>
+      <th>数量</th>
+      <% if @trade.currency_kind == 0 %>
+          <th>日本円換算</th>
+      <% elsif @trade.currency_kind == 1 %>
+          <th>USドル換算</th>
+      <% end %>
+    </tr>
+    <tr align="center" height="40">
+      <td><%= @kind_label %></td>
+      <td><%= @amount %> PC</td>
+      <% if @trade.currency_kind == 0 %>
+      <td><%= @to_yen %> 円</td>
+      <% elsif @trade.currency_kind == 1 %>
+      <td><%= @to_doller %> $</td>
+      <% end %>
+    </tr>
+  </table>
+</div>

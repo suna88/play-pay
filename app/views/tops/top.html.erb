@@ -11,8 +11,7 @@
       </div>
       <div class="right-content">
         <h4 class="catch">メールアドレス入力で簡単登録！</h4>
-        <%= form_tag do %>
-            <input class="email-form" type="email" placeholder="Email">
+        <%= link_to new_user_path, {class: 'link'} do %>
             <button class="submit">無料登録へ</button>
         <% end %>
       </div>

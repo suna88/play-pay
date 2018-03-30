@@ -4,7 +4,9 @@
         <%= image_tag 'PlayPay.png', {class: 'logo'} %>
     <% end %>
     <div class="menu">
-      <%= link_to '簡単売買', new_trade_path, {class: 'block'} %>
+      <% if logged_in? %>
+          <%= link_to '簡単売買', new_trade_path, {class: 'block'} %>
+      <% end %>
       <%= link_to '取引の前に', explanation_path, {class: 'block'} %>
       <%= link_to 'お問い合わせ', support_path, {class: 'block'} %>
       <% if logged_in? %>
@@ -12,7 +14,9 @@
       <% else %>
           <%= link_to 'ログイン', login_path, {class: 'block'} %>
       <% end %>
-      <%= link_to '無料会員登録', new_user_path, {class: 'block'} %>
+      <% if !logged_in? %>
+          <%= link_to '無料会員登録', new_user_path, {class: 'block'} %>
+      <% end %>
       <%= link_to '日本語', root_path, {class: 'block'} %>
       <% if logged_in? %>
           <%= link_to 'Account', user_path(current_user), {class: 'block'} %>

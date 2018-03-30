@@ -10,16 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180330052100) do
+ActiveRecord::Schema.define(version: 20180330130434) do
+
+  create_table "coins", force: :cascade do |t|
+    t.integer "buy_price_per_yen"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "trades", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
-    t.string "kind"
+    t.integer "kind"
     t.integer "amount"
     t.integer "state"
     t.integer "status"
+    t.integer "currency_kind"
     t.index ["user_id"], name: "index_trades_on_user_id"
   end
 

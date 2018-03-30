@@ -8,18 +8,16 @@
     <div class="box">
       <h5>Services</h5>
       <ul>
-        <li>ホーム</li>
-        <li>簡単売買</li>
-        <li>取引</li>
-        <li>決済</li>
-        <li>マネパカード申込</li>
+        <li><%= link_to 'ホーム', root_path %></li>
+        <% if logged_in? %>
+            <li><%= link_to '簡単売買', new_trade_path%></li>
+        <% end %>
       </ul>
     </div>
     <div class="box">
       <h5>Information</h5>
       <ul>
         <li>ニュース</li>
-        <li>採用情報</li>
         <li>手数料</li>
       </ul>
     </div>
@@ -35,10 +33,13 @@
     <div class="box">
       <h5>Support</h5>
       <ul>
-        <li>初めての方へ</li>
+        <li> <%= link_to'取引の前に', explanation_path %></li>
         <li>ヘルプ</li>
         <li>よくあるご質問</li>
-        <li>お問い合わせ</li>
+        <li><%= link_to 'お問い合わせ', support_path %></li>
+        <% if current_user.try(:admin) %>
+            <li><%= link_to '管理者ページ', admin_top_path %></li>
+        <% end %>
       </ul>
     </div>
   </div>
