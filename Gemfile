@@ -61,9 +61,11 @@ group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
 end
+gem 'pg', group: :production
 
 group :production, :staging do
-  gem 'unicorn'
+  #gem 'pg', '0.20.0'
+  #gem 'unicorn'
 end
 
-gem 'mysql2' ,'< 0.5.0'
+#gem 'mysql2' ,'< 0.5.0'
