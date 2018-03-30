@@ -39,5 +39,13 @@ require 'capistrano/rails/migrations'
 # require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 
+require 'capistrano/nodenv'
+
+set :nodenv_type, :user # or :system, depends on your nodenv setup
+set :nodenv_node, '0.10.3'
+set :nodenv_prefix, "NODENV_ROOT=#{fetch(:nodenv_path)} NODENV_VERSION=#{fetch(:nodenv_node)} #{fetch(:nodenv_path)}/bin/nodenv exec"
+set :nodenv_map_bins, %w{node npm}
+set :nodenv_roles, :all # default value
+
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rb").each { |r| import r }
