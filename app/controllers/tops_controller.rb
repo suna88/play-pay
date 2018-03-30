@@ -9,4 +9,7 @@ class TopsController < ApplicationController
   def support
     
   end
+  def explanation
+
+  end
 end

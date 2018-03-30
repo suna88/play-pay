@@ -7,8 +7,11 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy'
   get 'qa', to:'tops#qa'
   get 'support', to:'tops#support'
+  get 'explanation', to:'tops#explanation'
 
   resources :trades
+
+  get 'confirm',to: 'trades#confirm'
 
 
   root 'tops#top'

@@ -1,0 +1,48 @@
+<div id="app">
+  <div class="easy-trade">
+
+
+
+    <div class="box middle-blue">
+      <div class="upper">+
+        <div class="mask"></div>
+        <h2 class="box-title">PlayCoinの売り価格</h2>
+        <div class="price blue">
+          <span>売却</span><br>
+          {{sell_price}}円<br>
+          前日比 +1234円
+        </div>
+        <h2 class="box-title">PlayCoinの数量</h2>
+        <input v-model="sellAmount" type="number" min="0" step="1"> PC
+        <h2 class="box-title">日本円の設定金額</h2>
+        <div>{{total_buy_price = sell_price * sellAmount}} 円</div>
+        <div v-if="showBalance(balance) * 1 <sellAmount">PlayCoin不足です</div>
+        <button class="button blue">PlayCoinを売る</button>
+      </div>
+      <div class="light-blue">
+        <h2>所持<span> {{ showBalance(balance) }}</span> PC</h2>
+      </div>
+    </div>
+
+
+
+
+    <div class="box middle-red">
+      <div class="upper">
+        <h2 class="box-title">PlayCoinの買う価格</h2>
+        <div class="price red">
+          <span>購入</span><br>
+          {{buy_price}} 円<br>
+          前日比 +424円
+        </div>
+        <h2 class="box-title">PlayCoinの数量</h2>
+        <%= form_for @trade do |f| %>
+            <%= f.number_field :amount,{min: 1,max:10000} %>
+            <%= f.submit 'PlayCoinを買う' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+

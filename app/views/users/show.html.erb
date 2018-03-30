@@ -1,21 +1,15 @@
-<h1 class="title">Wallet</h1>
-<div class="content wallet">
+<div class="explanation">
+  <h2 class="title">Account</h2>
   <table class="table">
-
-
     <tr>
-      <th>種類</th>
-      <th>数量</th>
-      <th>使用可能</th>
-      <th>価格</th>
-      <th>換算</th>
+      <th>name</th>
+      <th>email</th>
+      <th>MetaMask Address</th>
     </tr>
     <tr>
-      <td>PlayCoin</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100$</td>
-      <td>1000$</td>
+      <td><%= @user.name %></td>
+      <td><%= @user.email %></td>
+      <td><%= @user.meta_address %></td>
     </tr>
   </table>
 </div>

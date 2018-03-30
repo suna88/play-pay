@@ -392,6 +392,10 @@
       padding: 10px 35px 0 35px;
       text-align: center;
 
+      .mask{
+        position: absolute;
+      }
+
       .price {
         color: white;
         padding: 10px 16px;
