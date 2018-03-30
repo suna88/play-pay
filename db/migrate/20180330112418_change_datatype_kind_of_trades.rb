@@ -1,5 +1,7 @@
 class ChangeDatatypeKindOfTrades < ActiveRecord::Migration[5.1]
-  def change
-    change_column :trades, :kind, :integer
+  if Rails.env.development?
+    def change
+      change_column :trades, :kind, :integer
+    end
   end
 end
