@@ -16,10 +16,22 @@
       <td><%= @kind_label %></td>
       <td><%= @amount %> PC</td>
       <% if @trade.currency_kind == 0 %>
-      <td><%= @to_yen %> 円</td>
+          <td><%= @to_yen %> 円</td>
       <% elsif @trade.currency_kind == 1 %>
-      <td><%= @to_doller %> $</td>
+          <td><%= @to_doller %> $</td>
       <% end %>
     </tr>
   </table>
+  <br>
+  <p>内容を変更する場合は以下のボタンをクリックしてください</p>
+  <%= link_to edit_trade_path do %>
+      <button class="button">変更</button>
+  <% end %>
+
+
+  <p>問題がなければ以下のボタンをクリックしてください。</p>
+  <%= form_tag 'confirm', :method => :post do %>
+      <%= hidden_field_tag :id, @trade.id %>
+      <button class="button">申し込む</button>
+  <% end %>
 </div>

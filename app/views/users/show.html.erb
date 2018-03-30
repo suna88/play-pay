@@ -12,6 +12,46 @@
       <td><%= @user.meta_address %></td>
     </tr>
   </table>
-
   <%= link_to 'ユーザー情報編集', edit_user_path %>
+
+  <h4 class="title">Now Trading</h4>
+  <table class="table">
+    <tr>
+      <th>date</th>
+      <th>amount</th>
+      <th>buy or sell</th>
+    </tr>
+    <% @valid_trades.each do |trade| %>
+        <tr>
+          <td><%= trade.created_at.strftime('%Y/%m/%d') %></td>
+          <td><%= trade.amount %> PC</td>
+          <% if trade.kind == 0 %>
+              <td>購入</td>
+          <% elsif trade.kind == 1 %>
+              <td>売却</td>
+          <% end %>
+        </tr>
+    <% end %>
+  </table>
+
+  <h4 class="title">Trade History</h4>
+  <table class="table">
+    <tr>
+      <th>date</th>
+      <th>amount</th>
+      <th>buy or sell</th>
+    </tr>
+    <% @done_trades.each do |trade| %>
+        <tr>
+          <td><%= trade.created_at.strftime('%Y/%m/%d') %></td>
+          <td><%= trade.amount %> PC</td>
+          <% if trade.kind == 0 %>
+              <td>購入</td>
+          <% elsif trade.kind == 1 %>
+              <td>売却</td>
+          <% end %>
+        </tr>
+    <% end %>
+  </table>
+
 </div>

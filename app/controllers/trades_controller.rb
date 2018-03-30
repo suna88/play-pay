@@ -1,5 +1,5 @@
 class TradesController < ApplicationController
-  before_action :set_trade, only: [:show]
+  before_action :set_trade, only: [:show, :edit, :update]
 
   def index
 
@@ -13,8 +13,10 @@ class TradesController < ApplicationController
 
     if @trade.kind == 0
       @kind_label = '購入'
-    else
+    elsif @trade.kind == 1
       @kind_label = '売却'
+    else
+      @kind_label = 'error'
     end
 
   end
@@ -28,12 +30,13 @@ class TradesController < ApplicationController
   def create
     @trade = Trade.new(trade_params)
     @trade.user = current_user
-    @trade.kind = 0
     @trade.status = 0
 
     if @trade.save
       redirect_to @trade
     else
+      flash.now[:danger] = "入力情報に不備があります"
+      render 'new'
 
     end
 
@@ -44,14 +47,29 @@ class TradesController < ApplicationController
   end
 
   def update
-    @trade.status = 1
+    if @trade.update(trade_params)
+      redirect_to @trade
+    else
+      flash.now[:danger] = "入力情報に不備があります"
+      render 'edit'
+    end
+
+  end
+
+  def confirm
+    trade = Trade.find(params[:id])
+    trade.status = 1
+    if trade.save
+      flash[:success] = "トレードが受理されました"
+      redirect_to current_user
+    end
   end
 
 
   private
 
   def trade_params
-    params.require(:trade).permit(:amount,:currency_kind)
+    params.require(:trade).permit(:amount, :currency_kind, :kind)
   end
 
   def set_trade

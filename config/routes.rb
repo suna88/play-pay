@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get 'explanation', to:'tops#explanation'
 
   resources :trades
+  post 'trades/confirm', to:'trades#confirm'
 
 
 

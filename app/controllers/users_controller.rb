@@ -9,16 +9,19 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      flash[:success] = "hello"
+      flash.now[:success] = "登録が完了しました."
       redirect_to login_path
 
     else
+      flash.now[:danger] = "入力情報に不備があります"
       render 'new'
     end
   end
 
   def show
     @user = current_user
+    @valid_trades = @user.trades.where(status: 1).order(:created_at)
+    @done_trades = @user.trades.where(status: 2).order(:created_at)
   end
 
 

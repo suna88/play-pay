@@ -1,0 +1,55 @@
+<div id="app">
+  <div class="easy-trade">
+    <% if @trade.kind == 1 %>
+        <div class="box middle-blue">
+          <div class="upper">
+            <div class="mask"></div>
+            <h2 class="box-title">PlayCoinの売る価格</h2>
+            <div class="price blue">
+              <span>購入</span><br>
+              <%= Coin.last.buy_price_per_yen %>円<br>
+            </div>
+            <%= form_for @trade do |f| %>
+                <h2 class="box-title">PlayCoinの数量</h2>
+                <br>
+                <%= f.number_field :amount, {min: 1, max: 10000} %> PC
+                <br>
+                <br>
+                <h2 class="box-title">受け取り通貨</h2>
+                <br>
+                <%= f.select :currency_kind, {"JPY" => 0, "USD" => 1} %>
+                <%= f.hidden_field :kind, value: 1 %>
+                <%= f.submit '売却申請', {class: 'button blue'} %>
+            <% end %>
+          </div>
+        </div>
+    <% elsif @trade.kind == 0 %>
+        <div class="box middle-red">
+          <div class="upper">
+            <h2 class="box-title">PlayCoinの買う価格</h2>
+            <div class="price red">
+              <span>購入</span><br>
+              <%= Coin.last.buy_price_per_yen %>円<br>
+            </div>
+            <%= form_for @trade do |f| %>
+                <h2 class="box-title">PlayCoinの数量</h2>
+                <br>
+                <%= f.number_field :amount, {min: 1, max: 10000} %> PC
+                <br>
+                <br>
+                <h2 class="box-title">支払い通貨</h2>
+                <br>
+                <%= f.select :currency_kind, {"JPY" => 0, "USD" => 1} %>
+                <%= f.hidden_field :kind, value: 0 %>
+                <%= f.submit '購入申請', {class: 'button red'} %>
+            <% end %>
+          </div>
+        </div>
+    <% else %>
+        <div class="error">エラーが発生しました。最初からやり直してください。</div>
+    <% end %>
+  </div>
+  <%= link_to '新規トレード',new_trade_path %>
+</div>
+
+

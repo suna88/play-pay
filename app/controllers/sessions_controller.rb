@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       log_in (user)
       redirect_to root_path
     else
-      flash.now[:danger] = '間違っています'
+      flash.now[:danger] = '入力情報に謝りがあります'
       render 'new'
     end
   end
