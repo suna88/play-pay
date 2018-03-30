@@ -152,19 +152,49 @@
     margin: 50px 0;
   }
 
-  .container{
+  .container {
     padding: 0 30px;
     line-height: 1.8;
   }
 
+}
 
+.confirm {
+  text-align: center;
+  padding: 50px 400px;
+  color: rgba(80, 80, 80, 1);
+  .title {
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    color: rgba(80, 80, 80, 1);
+    margin: 50px 0;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  table{
+    margin: auto;
+  }
+  th{
+    text-align: center;
+  }
 
 }
 
-
-
-.user-index{
-  padding: 50px 400px;
+.user-index {
+  text-align: center;
+  padding: 50px 300px;
+  color: rgba(80, 80, 80, 1);
+  .title{
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    color: rgba(80, 80, 80, 1);
+    margin: 50px 0;
+  }
 }
 
 

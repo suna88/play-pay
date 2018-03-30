@@ -1,14 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only:[:show,:editm, :update]
-
-  def index
-    logger.debug('_______________')
-    logger.debug(current_user.admin)
-    logger.debug('___________________')
-    if current_user.admin != 1
-      redirect_to root_path
-    end
-  end
+  before_action :set_user, only:[:show,:edit, :update]
 
   def new
     @user = User.new

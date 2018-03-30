@@ -1,5 +1,21 @@
 class TradesController < ApplicationController
+  before_action :set_trade, only: [:show]
+
   def index
+
+  end
+
+  def show
+
+    @amount = @trade.amount
+    @to_yen = @amount * Coin.last.buy_price_per_yen
+    @to_doller = @amount * Coin.last.buy_price_per_yen / 100
+
+    if @trade.kind == 0
+      @kind_label = '購入'
+    else
+      @kind_label = '売却'
+    end
 
   end
 
@@ -12,19 +28,22 @@ class TradesController < ApplicationController
   def create
     @trade = Trade.new(trade_params)
     @trade.user = current_user
-    @trade.kind = 'buy'
+    @trade.kind = 0
     @trade.status = 0
 
     if @trade.save
-      redirect_to confirm_path
+      redirect_to @trade
     else
 
     end
 
   end
 
-  def confirm
-    @trade = current_user.trades.order(:id).last
+  def edit
+
+  end
+
+  def update
     @trade.status = 1
   end
 
@@ -32,6 +51,10 @@ class TradesController < ApplicationController
   private
 
   def trade_params
-    params.require(:trade).permit(:amount)
+    params.require(:trade).permit(:amount,:currency_kind)
+  end
+
+  def set_trade
+    @trade = Trade.find(params[:id])
   end
 end

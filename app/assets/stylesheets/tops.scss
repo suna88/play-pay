@@ -96,7 +96,7 @@
         flex-basis: 40%;
         margin: 100px 50px;
         background-color: rgba(255, 255, 255, 0.8);
-        height: 300px;
+        height: 250px;
         padding: 50px;
         .catch {
           color: rgb(51, 122, 183);
@@ -108,14 +108,18 @@
           padding: 3px;
           margin: 20px auto;
         }
-        .submit {
-          font-size: 18px;
-          color: #F7F7F7;
+        .link {
+          margin: 40px 0;
           width: 90%;
-          height: 44px;
-          padding: 10px auto;
-          background-color: rgb(3, 155, 229);
+          .submit {
+            font-size: 18px;
+            color: #F7F7F7;
+            width: 100%;
+            height: 44px;
+            padding: 10px auto;
+            background-color: rgb(3, 155, 229);
 
+          }
         }
       }
     }
@@ -392,7 +396,7 @@
       padding: 10px 35px 0 35px;
       text-align: center;
 
-      .mask{
+      .mask {
         position: absolute;
       }
 
@@ -431,16 +435,16 @@
 
 .red {
   background-color: #c9302c;
-  >span{
-    color:  #c9302c;;
+  > span {
+    color: #c9302c;;
   }
 }
 
-.light-red{
+.light-red {
   text-align: center;
-  background-color:#ffe7e6 ;
+  background-color: #ffe7e6;
   padding: 0 20px;
-  h2{
+  h2 {
     font-size: 18px;
     margin-bottom: 0;
     padding: 10px;
@@ -450,19 +454,18 @@
   }
 }
 
-
 .middle-red {
   background-color: #fdd6d5;
 }
 
 .blue {
   background-color: #5bc0de;
-  >span{
+  > span {
     color: #5bc0de;
   }
 }
 
-.middle-blue{
+.middle-blue {
   background-color: #c2ebf8;
 }
 
@@ -470,10 +473,10 @@
   text-align: center;
   padding: 0 20px;
   background-color: #dbf6fe;
-  h2{
+  h2 {
     padding: 10px;
     font-size: 18px;
-    margin-bottom:0 ;
+    margin-bottom: 0;
     > span {
       color: #c9302c;
     }

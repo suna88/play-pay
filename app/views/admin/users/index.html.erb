@@ -1,0 +1,31 @@
+<div class="user-index">
+  <h2 class="title">顧客リスト</h2>
+  <table class="table">
+    <tr>
+      <th>名前</th>
+      <th>所持PC</th>
+      <th>MetaMask address</th>
+      <th>Email</th>
+      <th>最新の申請</th>
+      <th>最新の数量</th>
+    </tr>
+    <% User.all.each do |user| %>
+        <tr>
+          <td><%= user.name %></td>
+          <td>
+            <a href="https://ropsten.etherscan.io/token/0x6c123c0029a6dd4d0c4a53f556611c665d886011?a=<%= user.meta_address %>">確認</a>
+          </td>
+          <td><%= user.meta_address %></td>
+          <td><%= user.email %></td>
+          <% if user.trades.order(:id).last.try(:kind)==0 %>
+              <td>購入</td>
+          <% elsif user.trades.order(:id).last.try(:kind)==1 %>
+              <td>売却</td>
+          <% else %>
+              <td>未</td>
+          <% end %>
+          <td><%= user.trades.order(:id).last.try(:amount) %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>
