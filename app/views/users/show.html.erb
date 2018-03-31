@@ -19,7 +19,9 @@
       <th>date</th>
       <th>amount</th>
       <th>buy or sell</th>
-      <% if current_user.admin==1 %>
+      <%# if current_user.admin==1 %>
+      <% if current_user.admin %>
+
           <th>コインを送る</th>
           <th>完了</th>
       <% end %>
@@ -33,9 +35,16 @@
           <% elsif trade.kind == 1 %>
               <td>売却</td>
           <% end %>
-          <% if current_user.admin==1 %>
+          <%# if current_user.admin==1 %>
+          <% if current_user.admin %>
+
               <td></td>
-              <td><% form_tag '' do %><button>完了</button> <% end %></td>
+              <td>
+                <%= form_tag admin_users_done_path, method: :post do %>
+                    <button>完了</button>
+                    <%= hidden_field_tag :id, trade.id %>
+                <% end %>
+              </td>
           <% end %>
         </tr>
     <% end %>

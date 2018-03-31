@@ -1,16 +1,14 @@
 Rails.application.routes.draw do
 
-  namespace :admin do
-    get 'coins/edit'
-  end
-
   resources :users
   get 'mypage', to:'users#mypage'
 
   namespace :admin do
     get 'top',to:'tops#top'
+
     resources :users,only:[:index]
-    resources :coins,only:[:new,:create]
+    post 'users/done', to:'users#done'
+    resources :coins,only:[:new,:create,:edit]
   end
 
 
