@@ -6,8 +6,7 @@
       <th>所持PC</th>
       <th>MetaMask address</th>
       <th>Email</th>
-      <th>最新の申請</th>
-      <th>最新の数量</th>
+      <th>申請待ち</th>
     </tr>
     <% User.all.each do |user| %>
         <tr>
@@ -17,14 +16,11 @@
           </td>
           <td><%= user.meta_address %></td>
           <td><%= user.email %></td>
-          <% if user.trades.order(:id).last.try(:kind)==0 %>
-              <td>購入</td>
-          <% elsif user.trades.order(:id).last.try(:kind)==1 %>
-              <td>売却</td>
+          <% if user.trades.order(:id).last.try(:kind)==1 %>
+              <td class="warn-wait">有</td>
           <% else %>
-              <td>未</td>
+              <td class="blue">無</td>
           <% end %>
-          <td><%= user.trades.order(:id).last.try(:amount) %></td>
         </tr>
     <% end %>
   </table>

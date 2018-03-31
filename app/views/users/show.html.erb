@@ -19,6 +19,10 @@
       <th>date</th>
       <th>amount</th>
       <th>buy or sell</th>
+      <% if current_user.admin==1 %>
+          <th>コインを送る</th>
+          <th>完了</th>
+      <% end %>
     </tr>
     <% @valid_trades.each do |trade| %>
         <tr>
@@ -28,6 +32,10 @@
               <td>購入</td>
           <% elsif trade.kind == 1 %>
               <td>売却</td>
+          <% end %>
+          <% if current_user.admin==1 %>
+              <td></td>
+              <td><% form_tag '' do %><button>完了</button> <% end %></td>
           <% end %>
         </tr>
     <% end %>

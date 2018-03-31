@@ -70,3 +70,4 @@ group :production, :staging do
 end
 
 #gem 'mysql2' ,'< 0.5.0'
+gem 'wovnrb', '>= 0.2'
