@@ -19,7 +19,7 @@
       <th>date</th>
       <th>amount</th>
       <th>buy or sell</th>
-      <%# if current_user.admin==1 %>
+      <% if current_user.admin==1 %>
       <% if current_user.admin %>
 
           <th>コインを送る</th>
@@ -35,7 +35,7 @@
           <% elsif trade.kind == 1 %>
               <td>売却</td>
           <% end %>
-          <%# if current_user.admin==1 %>
+          <% if current_user.admin==1 %>
           <% if current_user.admin %>
 
               <td></td>
