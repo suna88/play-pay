@@ -1,6 +1,20 @@
 // Place all the styles related to the Tops controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.link {
+  margin: 40px 0;
+  width: 90%;
+  .submit {
+    font-size: 18px;
+    color: #F7F7F7;
+    width: 100%;
+    height: 44px;
+    padding: 10px auto;
+    background-color: rgb(3, 155, 229);
+
+  }
+}
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -67,7 +81,7 @@
     background-image: image-url("S__23396408.jpg");
     color: #F7F7F7;
     text-shadow: 2px 2px 9px gray;
-    padding: 150px;
+    padding: 150px 150px 0;
     .wrap-title {
       margin-bottom: 100px;
     }
@@ -124,6 +138,28 @@
       }
     }
     .chart {
+      display: flex;
+      justify-content: space-between;
+      background-color: rgba(4, 22, 108, 0.85);
+      color: rgba(157, 157, 157, 1);
+      width: 100%;
+      padding: 15px 100px;
+      .block {
+        .blue {
+          color: rgb(17, 188, 159);
+        }
+        .red {
+          color: rgb(169, 68, 66);
+        }
+        p:first-child {
+          color: #F7F7F7;
+        }
+        p {
+          margin: 3px 0;
+          padding: 0;
+        }
+
+      }
 
     }
   }
@@ -456,7 +492,7 @@
   }
 
   .red {
-    background-color: rgba(201, 48, 44,0.6);
+    background-color: rgba(201, 48, 44, 0.6);
     > span {
       color: #c9302c;;
     }
@@ -481,14 +517,14 @@
   }
 
   .blue {
-    background-color:rgba(91, 192, 222,0.6);
+    background-color: rgba(91, 192, 222, 0.6);
     > span {
       color: #5bc0de;
     }
   }
 
   .middle-blue {
-    background-color: rgba(194, 235, 248,0.8);
+    background-color: rgba(194, 235, 248, 0.8);
     box-shadow: 1px 2px 2px lightgray;
   }
 

@@ -5,7 +5,7 @@
       <div class="left-content">
         <p class="mini-title">プレイコイン 取引手数料</p>
         <h1 class="catch-1">マイナス 0.01%!</h1>
-        <p class="explain">BTCmaker手数料が、期間限定でマイナス0.05%にさらに引き下げ！
+        <p class="explain">PCmaker手数料が、期間限定でマイナス0.05%にさらに引き下げ！
           国際送金がかなり有利に<br>
           <span>取扱通貨 USD,JPY,HKD,RMB 他多数</span></p>
       </div>
@@ -16,7 +16,70 @@
         <% end %>
       </div>
     </div>
-    <div class="chart"></div>
+    <div class="chart">
+      <div class="block">
+        <p>$0.941194</p>
+        <p class="red">USD/JPY</p>
+        <p class="red">↓0.2%</p>
+      </div>
+      <div class="block">
+        <p> E0.763496</p>
+        <p class="blue">EU/JPY</p>
+        <p class="blue"> ↑0.025% </p>
+      </div>
+      <div class="block">
+        <p>HK$7.385835</p>
+        <p class="red"> HKD/JPY</p>
+        <p class="red"> ↓0.33% </p>
+      </div>
+      <div class="block">
+        <p>NT$27.267337</p>
+        <p class="blue">NTD/JPY </p>
+        <p class="blue">↑0.3% </p>
+      </div>
+      <div class="block">
+        <p>¥5.903636 </p>
+        <p class="blue">RMB/JPY </p>
+        <p class="blue">↑0.025% </p>
+      </div>
+      <div class="block">
+        <p> $1.224061
+        </p>
+        <p class="blue">AUD/JPY
+        </p>
+        <p class="blue">↑0.025%</p>
+      </div>
+      <div class="block">
+        <p>W 997.430208</p>
+        <p class="red">KRW/JPY</p>
+        <p class="red"> ↓3%</p>
+      </div>
+      <div class="block">
+        <p>$1.29894</p>
+        <p class="red">NZD/JPY  </p>
+        <p class="red"> ↓2% </p>
+      </div>
+      <div class="block">
+        <p>$0.941194</p>
+        <p class="red">USD/JPY</p>
+        <p class="red">↓0.2%</pclass>
+      </div>
+      <div class="block">
+        <p>$1,234009</p>
+        <p class="red">SGD/JPY</p>
+        <p class="red">↓0.002%</p>
+      </div>
+      <div class="block">
+        <p> р53.761951 </p>
+        <p class="red"> RUB/JPY     </p>
+        <p class="red">↓6%  </p>
+      </div>
+      <div class="block">
+        <p>$17.081707</p>
+        <p class="blue">MXN/JPY</p>
+        <p class="blue">↑0.078%</p>
+      </div>
+    </div>
   </div>
   <div class="first-band"></div>
   <div class="middle-container">
@@ -99,7 +162,9 @@
           <%= image_tag 'bank.png' %>
           <div class="content">
             <h4>総額1億円キャンペーン</h4>
-            <button class="button">無料登録へ</button>
+            <%= link_to new_user_path, {class: 'link'} do %>
+                <button class="submit">無料登録へ</button>
+            <% end %>
             <p>出来高が増えるほど報酬額も増える！出来高ランキングキャンペーンを毎日開催！対象取引はPC</p>
           </div>
         </div>
@@ -110,7 +175,9 @@
           <%= image_tag 'rev.png' %>
           <div class="content">
             <h4>信用取引レバレッジ</h4>
-            <button class="button">無料登録へ</button>
+            <%= link_to new_user_path, {class: 'link'} do %>
+                <button class="submit">無料登録へ</button>
+            <% end %>
             <p>最大7.77倍のレバレッジ取引が開始。トレードスタイルに合わせてレバレッジ倍率も選択可能！</p>
 
           </div>
@@ -121,7 +188,9 @@
           <%= image_tag 'PlayPayment.png' %>
           <div class="content">
             <h4>総額1億円キャンペーン</h4>
-            <button class="button">無料登録へ</button>
+            <%= link_to new_user_path, {class: 'link'} do %>
+                <button class="submit">無料登録へ</button>
+            <% end %>
             <p>プレイコイン支払を簡単に実現できる決済サービスです。商品購入に支払った暗号通貨は、円に換金してお振込みをします。決済手数料はゼロです。</p>
           </div>
         </div>
@@ -139,7 +208,7 @@
       </div>
       <div class="box">
         <h4>通知機能</h4>
-       <p>設定した価格になるとお知らせしてくれる通知機能や、売買が成立したときにお知らせしてくれる通知機能があります。売り時買い時を逃しません。 </p>
+        <p>設定した価格になるとお知らせしてくれる通知機能や、売買が成立したときにお知らせしてくれる通知機能があります。売り時買い時を逃しません。 </p>
       </div>
       <div class="box">
         <h4>信用取引</h4>
@@ -150,7 +219,9 @@
         <p>ログインパスワードの他に、ワンタイムパスワードを生成する認証アプリをインストールしたスマートフォンを利用して行う二段階認証を利用することができます。お取引と口座の管理・入出金のセキュリティをより高めることが出来ます。</p>
       </div>
     </div>
-    <button class="button">無料登録へ</button>
+    <%= link_to new_user_path, {class: 'link'} do %>
+        <button class="submit">無料登録へ</button>
+    <% end %>
   </div>
 
   <div class="news-contain">
