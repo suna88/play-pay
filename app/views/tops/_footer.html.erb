@@ -33,7 +33,7 @@
       <h5>Support</h5>
       <ul>
         <li> <%= link_to '取引の前に', explanation_path %></li>
-        <li><%#= link_to 'よくあるご質問', qa_path %></li>
+        <li><%= link_to 'よくあるご質問', qa_path %></li>
         <li><%= link_to 'お問い合わせ', support_path %></li>
         <% if logged_in? %>
             <% if current_user.admin_user? %>
