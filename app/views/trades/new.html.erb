@@ -11,10 +11,10 @@
         <%= form_for @trade do |f| %>
             <h2 class="box-title">PlayCoinの数量</h2>
             <br>
-            <br>
-            <br>
             <% if @user.balance >=1 %>
                 <%= f.number_field :amount, {min: 1, max: @user.balance} %> PC
+                <br>
+                <br>
                 <h2 class="box-title">受け取り通貨</h2>
                 <br>
                 <%= f.select :currency_kind, {"JPY" => 0, "USD" => 1} %>
