@@ -61,7 +61,7 @@ class TradesController < ApplicationController
     trade.status = 1
     if trade.save
       flash[:success] = "トレードが受理されました"
-      redirect_to current_user
+      redirect_to mypage_path
     end
   end
 
