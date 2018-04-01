@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.formal-title{
+.formal-title {
   font-size: 28px;
   margin: 50px 0;
   font-family: "Al Bayan";
@@ -234,7 +234,7 @@
   }
 
   ul {
-    padding-left:30px ;
+    padding-left: 30px;
     li {
       list-style: decimal;
       font-weight: bold;
@@ -243,9 +243,7 @@
 
 }
 
-
-
-.legal{
+.legal {
   text-align: left;
   padding: 50px 300px;
   color: rgba(80, 80, 80, 1);
@@ -255,41 +253,69 @@
     padding-bottom: 5px;
     color: rgba(80, 80, 80, 1);
     margin: 20px 0;
-  }ul{
+  }
+  ul {
     padding: 0 30px;
-    li{
+    li {
       list-style: decimal;
     }
   }
 }
 
-.important-things{
+.important-things {
   text-align: left;
   padding: 50px 300px;
   color: rgba(80, 80, 80, 1);
-  h1{
+  h1 {
     margin: 50px 0;
   }
-h2{
-  font-size: 24px;
-}
+  h2 {
+    font-size: 24px;
+  }
 
-  h4{
+  h4 {
     margin: 30px 0;
     font-weight: bold;
   }
-  p{
-    span{
-      font-weight:bold;
+  p {
+    span {
+      font-weight: bold;
     }
   }
 
 }
 
+.beginner {
+  text-align: left;
+  padding: 50px 300px;
+  color: rgba(80, 80, 80, 1);
+  .title {
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    color: rgba(80, 80, 80, 1);
+    margin: 50px 0;
+  }
+  h3{
+    font-weight: bold;
+    margin: 50px 0;
+  }
 
+  .box{
+    background-color: rgb(245,245,245);
+    border:1px solid rgb(227,227,227);
+    padding: 20px 30px;
+    margin: 40px 0;
+    p{
+      line-height: 1.7;
+    }
+  }
 
-
-
+  img{
+    width: 600px;
+    height: 400px;
+  }
+}
 
 
 
