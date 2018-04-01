@@ -5,7 +5,7 @@
         <div class="mask"></div>
         <h2 class="box-title">PlayCoinの売る価格</h2>
         <div class="price blue">
-          <span>購入</span><br>
+          <span>売却</span><br>
           <%= Coin.last.buy_price_per_yen %>円<br>
         </div>
         <%= form_for @trade do |f| %>
@@ -22,7 +22,6 @@
         <% end %>
       </div>
     </div>
-
     <div class="box middle-red">
       <div class="upper">
         <h2 class="box-title">PlayCoinの買う価格</h2>
