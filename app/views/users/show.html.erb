@@ -1,3 +1,4 @@
+<div id="js-app">
 <div class="explanation">
   <h2 class="title">Account</h2>
   <table class="table">
@@ -37,7 +38,7 @@
           <% end %>
           <% if current_user.admin_user? %>
 
-              <td></td>
+              <td><button @click="send(`<%= @user.meta_address %>`, <%= trade.amount %>)">送る</button></td>
               <td>
                 <%= form_tag admin_users_done_path, method: :post do %>
                     <button>完了</button>
@@ -68,5 +69,5 @@
         </tr>
     <% end %>
   </table>
-
+</div>
 </div>
