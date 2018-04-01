@@ -18,6 +18,9 @@ class TopsController < ApplicationController
   end
 
   def legal
+  end
+
+  def important_things
 
   end
 end

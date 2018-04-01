@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get 'qa', to:'tops#qa'
   get 'qa_show/:id', to:'tops#qa_show', as:'qa_show'
   get 'legal',to:'tops#legal'
+  get 'important_things',to:'tops#important_things'
   get 'support', to:'tops#support'
   get 'explanation', to:'tops#explanation'
 
