@@ -1,73 +1,76 @@
 <div id="js-app">
-<div class="explanation">
-  <h2 class="title">Account</h2>
-  <table class="table">
-    <tr>
-      <th>name</th>
-      <th>email</th>
-      <th>MetaMask Address</th>
-      <th>balance</th>
-    </tr>
-    <tr>
-      <td><%= @user.name %></td>
-      <td><%= @user.email %></td>
-      <td><%= @user.meta_address %></td>
-      <td><%= @user.balance %></td>
-    </tr>
-  </table>
+  <div class="explanation">
+    <h2 class="title">Account</h2>
+    <table class="table">
+      <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>MetaMask Address</th>
+        <th>balance</th>
+      </tr>
+      <tr>
+        <td><%= @user.name %></td>
+        <td><%= @user.email %></td>
+        <td><%= @user.meta_address %></td>
+        <td><%= @user.balance %></td>
+      </tr>
+    </table>
 
-  <h4 class="title">Now Trading</h4>
-  <table class="table">
-    <tr>
-      <th>date</th>
-      <th>amount</th>
-      <th>buy or sell</th>
-      <% if current_user.admin_user? %>
-          <th>コインを送る</th>
-          <th>完了</th>
+    <h4 class="title">Now Trading</h4>
+    <table class="table">
+      <tr>
+        <th>date</th>
+        <th>amount</th>
+        <th>buy or sell</th>
+        <% if current_user.admin_user? %>
+            <th>コインを送る</th>
+            <th>完了</th>
+        <% end %>
+      </tr>
+      <% @valid_trades.each do |trade| %>
+          <tr>
+            <td><%= trade.created_at.strftime('%Y/%m/%d') %></td>
+            <td><%= trade.amount %> PC</td>
+            <% if trade.kind == 0 %>
+                <td>購入</td>
+            <% elsif trade.kind == 1 %>
+                <td>売却</td>
+            <% end %>
+            <% if current_user.admin_user? %>
+                <td>
+                  <% if trade.kind == 0 %>
+                      <button @click="send(`<%= @user.meta_address %>`, <%= trade.amount %>)">送る</button>
+                  <% end %>
+                </td>
+                <td>
+                  <%= form_tag admin_users_done_path, method: :post do %>
+                      <button>完了</button>
+                      <%= hidden_field_tag :id, trade.id %>
+                  <% end %>
+                </td>
+            <% end %>
+          </tr>
       <% end %>
-    </tr>
-    <% @valid_trades.each do |trade| %>
-        <tr>
-          <td><%= trade.created_at.strftime('%Y/%m/%d') %></td>
-          <td><%= trade.amount %> PC</td>
-          <% if trade.kind == 0 %>
-              <td>購入</td>
-          <% elsif trade.kind == 1 %>
-              <td>売却</td>
-          <% end %>
-          <% if current_user.admin_user? %>
+    </table>
 
-              <td><button @click="send(`<%= @user.meta_address %>`, <%= trade.amount %>)">送る</button></td>
-              <td>
-                <%= form_tag admin_users_done_path, method: :post do %>
-                    <button>完了</button>
-                    <%= hidden_field_tag :id, trade.id %>
-                <% end %>
-              </td>
-          <% end %>
-        </tr>
-    <% end %>
-  </table>
-
-  <h4 class="title">Trade History</h4>
-  <table class="table">
-    <tr>
-      <th>date</th>
-      <th>amount</th>
-      <th>buy or sell</th>
-    </tr>
-    <% @done_trades.each do |trade| %>
-        <tr>
-          <td><%= trade.created_at.strftime('%Y/%m/%d') %></td>
-          <td><%= trade.amount %> PC</td>
-          <% if trade.kind == 0 %>
-              <td>購入</td>
-          <% elsif trade.kind == 1 %>
-              <td>売却</td>
-          <% end %>
-        </tr>
-    <% end %>
-  </table>
-</div>
+    <h4 class="title">Trade History</h4>
+    <table class="table">
+      <tr>
+        <th>date</th>
+        <th>amount</th>
+        <th>buy or sell</th>
+      </tr>
+      <% @done_trades.each do |trade| %>
+          <tr>
+            <td><%= trade.created_at.strftime('%Y/%m/%d') %></td>
+            <td><%= trade.amount %> PC</td>
+            <% if trade.kind == 0 %>
+                <td>購入</td>
+            <% elsif trade.kind == 1 %>
+                <td>売却</td>
+            <% end %>
+          </tr>
+      <% end %>
+    </table>
+  </div>
 </div>
