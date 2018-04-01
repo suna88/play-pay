@@ -9,6 +9,8 @@
       <% end %>
       <%= link_to '取引の前に', explanation_path, {class: 'block'} %>
       <%= link_to 'お問い合わせ', support_path, {class: 'block'} %>
+      <%= link_to '初めての方へ', beginner_path, {class: 'block'} %>
+      <%= link_to 'よくあるご質問', qa_path, {class: 'block'} %>
       <% if logged_in? %>
           <%= link_to 'ログアウト', logout_path, {class: 'block'} %>
       <% else %>

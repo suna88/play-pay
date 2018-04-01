@@ -219,7 +219,7 @@
 }
 
 .faq {
-  font-size: 18px;
+  font-size: 16px;
   padding: 50px 250px;
   .title {
     border-bottom: 1px solid lightgray;
@@ -230,12 +230,14 @@
 
   .faq-title {
     font-size: 20px;
+    font-weight: bold;
   }
 
   ul {
     padding-left:30px ;
     li {
       list-style: decimal;
+      font-weight: bold;
     }
   }
 
@@ -245,7 +247,7 @@
 
 .legal{
   text-align: left;
-  padding: 50px 400px;
+  padding: 50px 300px;
   color: rgba(80, 80, 80, 1);
   .title {
     text-align: left;

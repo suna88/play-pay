@@ -23,4 +23,10 @@ class TopsController < ApplicationController
   def important_things
 
   end
+
+  def beginner
+
+  end
+
+
 end

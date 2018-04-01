@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'legal',to:'tops#legal'
   get 'important_things',to:'tops#important_things'
   get 'support', to:'tops#support'
+  get 'beginner',to:'tops#beginner'
   get 'explanation', to:'tops#explanation'
 
   resources :trades
