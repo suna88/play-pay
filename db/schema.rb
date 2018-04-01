@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180330141657) do
+ActiveRecord::Schema.define(version: 20180401050000) do
 
   create_table "coins", force: :cascade do |t|
     t.integer "buy_price_per_yen"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20180330141657) do
     t.datetime "updated_at", null: false
     t.string "meta_address"
     t.boolean "admin", default: false, null: false
+    t.integer "balance", default: 0
   end
 
 end

@@ -2,7 +2,7 @@
   <h3 class="title">ログイン</h3>
     <%= form_for(:session, url: login_path) do |f| %>
         <div class="form-box">
-          <label class="form-label">メールアドレス</label>
+          <label class="form-label">Email address(半角英数字)</label>
           <%= f.email_field :email, {class: 'form'} %>
         </div>
         <div class="form-box">

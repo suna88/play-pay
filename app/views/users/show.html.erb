@@ -5,11 +5,13 @@
       <th>name</th>
       <th>email</th>
       <th>MetaMask Address</th>
+      <th>balance</th>
     </tr>
     <tr>
       <td><%= @user.name %></td>
       <td><%= @user.email %></td>
       <td><%= @user.meta_address %></td>
+      <td><%= @user.balance %></td>
     </tr>
   </table>
 
@@ -19,8 +21,7 @@
       <th>date</th>
       <th>amount</th>
       <th>buy or sell</th>
-      <%# if current_user.admin==1 %>
-      <% if current_user.admin %>
+      <% if current_user.admin==1 %>
 
           <th>コインを送る</th>
           <th>完了</th>
@@ -35,8 +36,7 @@
           <% elsif trade.kind == 1 %>
               <td>売却</td>
           <% end %>
-          <%# if current_user.admin==1 %>
-          <% if current_user.admin %>
+          <% if current_user.admin==1 %>
 
               <td></td>
               <td>

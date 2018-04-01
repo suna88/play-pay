@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update]
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def new
     @user = User.new
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    if true#current_user.admin == 1 || current_user == @user
+    if current_user.admin == 1 || current_user == @user
       @valid_trades = @user.trades.where(status: 1).order(:created_at)
       @done_trades = @user.trades.where(status: 2).order(:created_at)
     else
@@ -48,10 +48,16 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    @user.destroy
+    redirect_to admin_users_path, notice: 'Item was successfully destroyed.'
+
+  end
+
 
   private
   def user_params
-    params.require(:user).permit(:email, :name, :password, :meta_address)
+    params.require(:user).permit(:email, :name, :password, :meta_address, :balance)
   end
 
   def set_user
