@@ -19,7 +19,6 @@ function onlyRopstenTestNetwork(cb) {
 }
 
 var contractAddress = "0x6c123c0029a6dd4d0c4a53f556611c665d886011";
-var masterAccount = "0xBEDdD2686455DD6cB99a34A055679B92030928d8";
 var abiArray = [{
     "constant": true,
     "inputs": [],

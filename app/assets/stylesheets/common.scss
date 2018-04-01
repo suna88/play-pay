@@ -3,6 +3,12 @@
   text-align: center;
 }
 
+.formal-title{
+  font-size: 28px;
+  margin: 50px 0;
+  font-family: "Al Bayan";
+}
+
 .common-content {
   padding: 50px 400px;
   color: rgba(80, 80, 80, 1);
@@ -208,16 +214,52 @@
   }
 }
 
-.warn-wait{
-  color:red
+.warn-wait {
+  color: red
+}
+
+.faq {
+  font-size: 18px;
+  padding: 50px 250px;
+  .title {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    color: rgba(80, 80, 80, 1);
+    margin: 50px 0;
+  }
+
+  .faq-title {
+    font-size: 20px;
+  }
+
+  ul {
+    padding-left:30px ;
+    li {
+      list-style: decimal;
+    }
+  }
+
 }
 
 
 
-
-
-
-
+.legal{
+  text-align: left;
+  padding: 50px 400px;
+  color: rgba(80, 80, 80, 1);
+  .title {
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    color: rgba(80, 80, 80, 1);
+    margin: 20px 0;
+  }ul{
+    padding: 0 30px;
+    li{
+      list-style: decimal;
+    }
+  }
+}
 
 
 

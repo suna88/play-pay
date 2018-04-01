@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   get 'logout', to: 'sessions#destroy'
   get 'qa', to:'tops#qa'
+  get 'qa_show/:id', to:'tops#qa_show', as:'qa_show'
+  get 'legal',to:'tops#legal'
   get 'support', to:'tops#support'
   get 'explanation', to:'tops#explanation'
 

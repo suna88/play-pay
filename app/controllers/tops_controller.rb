@@ -6,10 +6,18 @@ class TopsController < ApplicationController
 
   end
 
+  def qa_show
+
+  end
+
   def support
     
   end
   def explanation
+
+  end
+
+  def legal
 
   end
 end
