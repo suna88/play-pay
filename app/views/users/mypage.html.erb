@@ -5,11 +5,13 @@
       <th>name</th>
       <th>email</th>
       <th>MetaMask Address</th>
+      <th>total amount</th>
     </tr>
     <tr>
       <td><%= @user.name %></td>
       <td><%= @user.email %></td>
       <td><%= @user.meta_address %></td>
+      <td><%= @user.balance %></td>
     </tr>
   </table>
   <%= link_to 'ユーザー情報編集', edit_user_path(@user) %>
