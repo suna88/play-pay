@@ -139,12 +139,14 @@
     }
     .chart {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       background-color: rgba(4, 22, 108, 0.85);
       color: rgba(157, 157, 157, 1);
       width: 100%;
       padding: 15px 100px;
       .block {
+        width: 65px;
+        margin: 0 10px;
         .blue {
           color: rgb(17, 188, 159);
         }
