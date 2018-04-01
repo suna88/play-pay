@@ -11,13 +11,17 @@
         <%= form_for @trade do |f| %>
             <h2 class="box-title">PlayCoinの数量</h2>
             <br>
-            <%= f.number_field :amount, {min: 1, max: 10000} %> PC
+            <% if @user.balance >=1 %>
+                <%= f.number_field :amount, {min: 1, max: @user.balance} %> PC
+            <% else %>
+            <div>現在PCを所持していません。</div>
+            <% end %>
             <br>
             <br>
             <h2 class="box-title">受け取り通貨</h2>
             <br>
             <%= f.select :currency_kind, {"JPY" => 0, "USD" => 1} %>
-            <%= f.hidden_field :kind, value:1 %>
+            <%= f.hidden_field :kind, value: 1 %>
             <%= f.submit '売却申請', {class: 'button blue'} %>
         <% end %>
       </div>
@@ -38,7 +42,7 @@
             <h2 class="box-title">支払い通貨</h2>
             <br>
             <%= f.select :currency_kind, {"JPY" => 0, "USD" => 1} %>
-            <%= f.hidden_field :kind,value: 0 %>
+            <%= f.hidden_field :kind, value: 0 %>
             <%= f.submit '購入申請', {class: 'button red'} %>
         <% end %>
       </div>

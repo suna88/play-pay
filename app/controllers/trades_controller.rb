@@ -23,7 +23,12 @@ class TradesController < ApplicationController
 
 
   def new
-    @trade = Trade.new
+    if logged_in?
+      @trade = Trade.new
+      @user = current_user
+    else
+      redirect_to login_path
+    end
 
   end
 

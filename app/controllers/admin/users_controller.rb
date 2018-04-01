@@ -16,7 +16,7 @@ class Admin::UsersController < ApplicationController
     end
     if user.update_attribute(:balance, balance)
         trade.update_attribute(:status, 2)
-      redirect_to admin_top_path
+      redirect_to user
     else
       flash.now[:danger] = "入力情報に不備があります"
       #logger.debug('_________________________')
@@ -28,7 +28,7 @@ class Admin::UsersController < ApplicationController
 
   private
   def confirm_admin
-    unless current_user.admin
+    unless current_user.admin_user?
       redirect_to root_path
     end
   end
