@@ -1,4 +1,5 @@
 <div class="explanation">
+  <h3 style="color:red;">現在試験運転中です。</h3>
   <h2 class="title">Account</h2>
   <table class="table">
     <tr>
@@ -55,5 +56,21 @@
         </tr>
     <% end %>
   </table>
+
+  <h4 class="title">トークン取得の仕方</h4>
+  <div class="how-to-get">
+  <ul>
+    <li><%= link_to '簡単売買', new_trade_path %>にてトークン購入の申請をしてください</li>
+    <li>申請が受理されるまでお待ち下さい。（受理された取引はTrade History に記載されます）</li>
+    <li>Google Chrome の Meta Maskを開き、Tokens タブ の ADD TOKENS をクリックしてください</li>
+    <%= image_tag 'add_token_display.png' %>
+    <li>Token Contract Address のフォームに以下のコントラクトアドレスを入力し、Add をクリックしてください<br>
+      Contract Address: 0x6c123c0029a6dd4d0c4a53f556611c665d886011 </li>
+    <%= image_tag 'token_contract_form_disp.png' %>
+  </ul>
+    <p>以上で操作は完了です。トークンが付与されていることをご確認ください。<br>
+    （ 3,4の操作は初回取引のみ必要となります ）<br>
+    （ * 現在試験運転中のため無料でトークンは付与されますが、本来は現金との交換になります。 ）</p>
+  </div>
 
 </div>
