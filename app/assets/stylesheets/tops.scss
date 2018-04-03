@@ -142,7 +142,7 @@
       background-color: rgba(4, 22, 108, 0.85);
       color: #F7F7F7;
       width: 100%;
-      padding: 7px 50px;
+      padding: 10px 50px;
 
       .constant-red1 {
         animation: red-anime 20s ease -2s infinite alternate;
@@ -214,7 +214,7 @@
           background-color: rgba(66, 165, 255, 0.1);
         }
 
-        6%{
+        6% {
           background-color: rgba(66, 165, 255, 0.6);
         }
 
@@ -229,9 +229,9 @@
 
       .block {
         display: inline-block;
-        width: 80px;
-        margin: 0 5px;
-        padding: 7px;
+        width: 85px;
+        margin: 0 7px;
+        padding: 5px;
         .blue {
           color: rgb(17, 188, 159);
         }
