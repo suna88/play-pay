@@ -142,11 +142,96 @@
       background-color: rgba(4, 22, 108, 0.85);
       color: #F7F7F7;
       width: 100%;
-      padding: 15px 50px;
+      padding: 10px 50px;
+
+      .constant-red1 {
+        animation: red-anime 20s ease -2s infinite alternate;
+
+      }
+      .constant-red2 {
+        animation: red-anime 20s ease 9s infinite alternate;
+
+      }
+      .constant-red3 {
+        animation: red-anime 20s ease 3s infinite alternate;
+
+      }
+      .constant-red4 {
+        animation: red-anime 20s ease 11s infinite alternate;
+
+      }
+      .constant-red5 {
+        animation: red-anime 20s ease 7s infinite alternate;
+
+      }
+      .constant-red6 {
+        animation: red-anime 20s ease 14s infinite alternate;
+
+      }
+      .constant-red7 {
+        animation: red-anime 20s ease 0s infinite alternate;
+
+      }
+      @keyframes red-anime {
+        0% {
+          background-color: rgba(171, 71, 188, 0);
+        }
+        3% {
+          background-color: rgba(171, 71, 188, 0.7);
+        }
+        5% {
+          background-color: rgba(171, 71, 188, 0.1);
+        }
+        100% {
+          background-color: rgba(171, 71, 188, 0);
+        }
+      }
+
+      .constant-blue1 {
+        animation: blue-anime 20s ease -2s infinite alternate;
+      }
+      .constant-blue2 {
+        animation: blue-anime 20s ease 7s infinite alternate;
+      }
+      .constant-blue3 {
+        animation: blue-anime 20s ease 3s infinite alternate;
+      }
+      .constant-blue4 {
+        animation: blue-anime 20s ease 11s infinite alternate;
+      }
+      .constant-blue5 {
+        animation: blue-anime 20s ease -5s infinite alternate;
+      }
+
+      @keyframes blue-anime {
+        0% {
+          background-color: rgba(66, 165, 255, 0);
+        }
+        2% {
+          background-color: rgba(66, 145, 245, 0.6);
+        }
+        4% {
+          background-color: rgba(66, 165, 255, 0.1);
+        }
+
+        6%{
+          background-color: rgba(66, 165, 255, 0.6);
+        }
+
+        8% {
+          background-color: rgba(66, 165, 255, 0);
+        }
+
+        100% {
+          background-color: rgba(66, 165, 255, 0);
+        }
+      }
+
       .block {
         display: inline-block;
-        width: 75px;
-        margin: 0 15px;
+        width: 90px;
+        margin: 0 7px;
+        padding: 10px;
         .blue {
           color: rgb(17, 188, 159);
         }
