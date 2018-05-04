@@ -195,3 +195,4 @@ function initializeApp(defaultAccount, contract, name, symbol, balance) {
         }
     )
 }
+;
