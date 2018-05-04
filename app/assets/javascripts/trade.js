@@ -177,6 +177,7 @@ function initializeApp(defaultAccount, contract, name, symbol, balance) {
                 },
                 send: function (to_address,amount) {
                     //var $this = this;
+                    alert(to_address + ' に ' + amount + ' PC を送ります。よろしいですか？');
                     amount = amount * 1e18;
                     contract.transfer(to_address, amount, {from: defaultAccount}, function (err, txhash) {
                         if (err) throw err;
