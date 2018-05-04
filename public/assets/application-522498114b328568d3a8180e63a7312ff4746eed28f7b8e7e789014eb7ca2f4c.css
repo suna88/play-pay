@@ -1,0 +1,1064 @@
+/* line 1, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.alert {
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* line 6, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.formal-title {
+  font-size: 28px;
+  margin: 50px 0;
+  font-family: "Al Bayan";
+}
+
+/* line 12, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content {
+  padding: 50px 400px;
+  color: #505050;
+}
+/* line 16, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .title {
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  color: #505050;
+  margin: 50px 0;
+}
+/* line 25, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .qa .qa-list {
+  margin: 10px 0;
+}
+/* line 30, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .alert {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+/* line 36, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .link {
+  margin: 10px;
+}
+/* line 40, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .ps {
+  margin: 0 10px;
+}
+/* line 44, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .arrow {
+  border-top: 3px solid #039be5;
+  border-right: 3px solid #039be5;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+/* line 54, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .contact-content .space {
+  margin: 30px 0;
+}
+/* line 56, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .contact-content .space select {
+  width: 400px;
+  height: 30px;
+  padding: 5px;
+}
+/* line 61, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .contact-content .space input {
+  width: 100%;
+  height: 30px;
+}
+/* line 65, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .contact-content .space textarea {
+  width: 100%;
+  height: 200px;
+}
+/* line 70, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.common-content .contact-content .button {
+  width: 70px;
+  font-size: 18px;
+  color: #F7F7F7;
+  height: 44px;
+  background-color: #039be5;
+  margin-bottom: 50px;
+}
+
+/* line 81, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.form-space {
+  text-align: center;
+  padding: 50px 400px;
+  color: #505050;
+}
+/* line 86, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.form-space .title {
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  color: #505050;
+  margin: 50px 150px;
+}
+/* line 94, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.form-space .form-box {
+  margin: 20px;
+}
+/* line 96, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.form-space .form-box .form {
+  border: solid 1px lightgray;
+  margin: 0 10px;
+}
+/* line 100, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.form-space .form-box .form-label {
+  display: block;
+  font-size: 15px;
+}
+/* line 105, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.form-space .button {
+  width: 60%;
+  font-size: 18px;
+  color: #F7F7F7;
+  height: 44px;
+  background-color: #039be5;
+  margin: 50px;
+}
+
+/* line 116, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.wallet {
+  height: 700px;
+  margin: auto;
+  width: 60%;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+}
+/* line 118, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.wallet .title {
+  margin: 10px;
+}
+/* line 127, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.wallet .table {
+  padding: 10px 30px;
+}
+
+/* line 132, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.title {
+  font-size: 24px;
+  border-bottom: 1px solid lightgray;
+  margin: 50px 150px;
+}
+
+/* line 139, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.red {
+  color: rgba(200, 120, 120, 0.5);
+}
+
+/* line 143, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.contact {
+  text-align: center;
+}
+/* line 146, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.contact .textarea {
+  width: 400px;
+  height: 200px;
+}
+
+/* line 152, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.explanation {
+  text-align: left;
+  padding: 50px 400px;
+  color: #505050;
+}
+/* line 156, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.explanation .title {
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  color: #505050;
+  margin: 50px 0;
+}
+/* line 164, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.explanation .container {
+  padding: 0 30px;
+  line-height: 1.8;
+}
+
+/* line 171, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.confirm {
+  text-align: center;
+  padding: 50px 400px;
+  color: #505050;
+}
+/* line 175, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.confirm .title {
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  color: #505050;
+  margin: 50px 0;
+}
+/* line 183, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.confirm p {
+  font-size: 16px;
+}
+/* line 187, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.confirm table {
+  margin: auto;
+}
+/* line 190, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.confirm th {
+  text-align: center;
+}
+/* line 193, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.confirm .button {
+  width: 100px;
+  font-size: 15px;
+  color: #F7F7F7;
+  height: 34px;
+  background-color: #039be5;
+  margin-bottom: 50px;
+}
+
+/* line 204, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.user-index {
+  text-align: center;
+  padding: 50px 300px;
+  color: #505050;
+}
+/* line 208, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.user-index .title {
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  color: #505050;
+  margin: 50px 0;
+}
+
+/* line 217, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.warn-wait {
+  color: red;
+}
+
+/* line 221, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.faq {
+  font-size: 16px;
+  padding: 50px 250px;
+}
+/* line 224, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.faq .title {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  color: #505050;
+  margin: 50px 0;
+}
+/* line 231, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.faq .faq-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 236, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.faq ul {
+  padding-left: 30px;
+}
+/* line 238, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.faq ul li {
+  list-style: decimal;
+  font-weight: bold;
+}
+
+/* line 246, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.legal {
+  text-align: left;
+  padding: 50px 300px;
+  color: #505050;
+}
+/* line 250, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.legal .title {
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  color: #505050;
+  margin: 20px 0;
+}
+/* line 257, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.legal ul {
+  padding: 0 30px;
+}
+/* line 259, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.legal ul li {
+  list-style: decimal;
+}
+
+/* line 265, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.important-things {
+  text-align: left;
+  padding: 50px 300px;
+  color: #505050;
+}
+/* line 269, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.important-things h1 {
+  margin: 50px 0;
+}
+/* line 272, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.important-things h2 {
+  font-size: 24px;
+}
+/* line 276, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.important-things h4 {
+  margin: 30px 0;
+  font-weight: bold;
+}
+/* line 281, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.important-things p span {
+  font-weight: bold;
+}
+
+/* line 288, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.beginner {
+  text-align: left;
+  padding: 50px 300px;
+  color: #505050;
+}
+/* line 292, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.beginner .title {
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  color: #505050;
+  margin: 50px 0;
+}
+/* line 299, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.beginner h3 {
+  font-weight: bold;
+  margin: 50px 0;
+}
+/* line 304, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.beginner .box {
+  background-color: whitesmoke;
+  border: 1px solid #e3e3e3;
+  padding: 20px 30px;
+  margin: 40px 0;
+}
+/* line 309, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.beginner .box p {
+  line-height: 1.7;
+}
+/* line 314, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/common.scss */
+.beginner img {
+  width: 600px;
+  height: 400px;
+}
+/* line 4, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.how-to-get {
+  padding: 0 30px;
+}
+/* line 7, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.how-to-get ul img {
+  width: 220px;
+  height: 400px;
+  margin: 10px;
+}
+/* line 12, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.how-to-get ul li {
+  line-height: 2.0;
+  list-style: decimal;
+}
+
+/* line 20, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.link {
+  margin: 40px 0;
+  width: 90%;
+}
+/* line 23, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.link .submit {
+  font-size: 18px;
+  color: #F7F7F7;
+  width: 100%;
+  height: 44px;
+  padding: 10px auto;
+  background-color: #039be5;
+}
+
+/* line 34, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 43, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.catch {
+  font-size: 22px;
+  color: #42a5f5;
+}
+
+/* line 48, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.main-title {
+  font-size: 40px;
+  color: #607d8b;
+  font-weight: 400;
+}
+
+/* line 54, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.header {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(4, 22, 108, 0.85);
+  color: #9d9d9d;
+  z-index: 1000;
+}
+/* line 63, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.header .bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 130px;
+  text-align: center;
+}
+/* line 69, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.header .bar .logo {
+  transform: scale(0.4);
+}
+/* line 74, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.header .bar .menu {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+/* line 79, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.header .bar .menu .block {
+  height: 100%;
+  padding: 15px;
+  font-size: 13px;
+  text-decoration: none;
+}
+/* line 85, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.header .bar .menu .block:hover {
+  color: #F7F7F7;
+}
+
+/* line 93, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field {
+  width: 100%;
+  text-align: center;
+}
+/* line 96, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container {
+  color: #F7F7F7;
+  text-shadow: 2px 2px 9px gray;
+  padding: 150px 150px 0;
+}
+/* line 100, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .wrap-title {
+  margin-bottom: 100px;
+}
+/* line 103, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content {
+  display: flex;
+}
+/* line 105, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content .left-content {
+  flex-basis: 50%;
+}
+/* line 107, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content .left-content .mini-title {
+  font-size: 25px;
+}
+/* line 110, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content .left-content .catch-1 {
+  font-size: 75px;
+  font-weight: 100;
+}
+/* line 114, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content .left-content .explain {
+  font-size: 17px;
+  line-height: 2.0;
+}
+/* line 117, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content .left-content .explain span {
+  color: #11BC9F;
+}
+/* line 124, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content .right-content {
+  flex-basis: 40%;
+  margin: 100px 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 250px;
+  padding: 50px;
+}
+/* line 130, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content .right-content .catch {
+  color: #337ab7;
+}
+/* line 134, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content .right-content .email-form {
+  width: 80%;
+  height: 30px;
+  padding: 3px;
+  margin: 20px auto;
+}
+/* line 140, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content .right-content .link {
+  margin: 40px 0;
+  width: 90%;
+}
+/* line 143, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .content .right-content .link .submit {
+  font-size: 18px;
+  color: #F7F7F7;
+  width: 100%;
+  height: 44px;
+  padding: 10px auto;
+  background-color: #039be5;
+}
+/* line 155, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(4, 22, 108, 0.85);
+  color: #F7F7F7;
+  width: 100%;
+  padding: 10px 50px;
+  font-size: 12px;
+}
+/* line 164, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-red1 {
+  animation: red-anime 20s ease -2s infinite alternate;
+}
+/* line 168, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-red2 {
+  animation: red-anime 20s ease 9s infinite alternate;
+}
+/* line 172, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-red3 {
+  animation: red-anime 20s ease 3s infinite alternate;
+}
+/* line 176, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-red4 {
+  animation: red-anime 20s ease 11s infinite alternate;
+}
+/* line 180, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-red5 {
+  animation: red-anime 20s ease 7s infinite alternate;
+}
+/* line 184, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-red6 {
+  animation: red-anime 20s ease 14s infinite alternate;
+}
+/* line 188, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-red7 {
+  animation: red-anime 20s ease 0s infinite alternate;
+}
+@keyframes red-anime {
+  0% {
+    background-color: rgba(171, 71, 188, 0);
+  }
+  3% {
+    background-color: rgba(171, 71, 188, 0.7);
+  }
+  5% {
+    background-color: rgba(171, 71, 188, 0.1);
+  }
+  100% {
+    background-color: rgba(171, 71, 188, 0);
+  }
+}
+/* line 207, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-blue1 {
+  animation: blue-anime 20s ease -2s infinite alternate;
+}
+/* line 210, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-blue2 {
+  animation: blue-anime 20s ease 7s infinite alternate;
+}
+/* line 213, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-blue3 {
+  animation: blue-anime 20s ease 3s infinite alternate;
+}
+/* line 216, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-blue4 {
+  animation: blue-anime 20s ease 11s infinite alternate;
+}
+/* line 219, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .constant-blue5 {
+  animation: blue-anime 20s ease -5s infinite alternate;
+}
+@keyframes blue-anime {
+  0% {
+    background-color: rgba(66, 165, 255, 0);
+  }
+  2% {
+    background-color: rgba(66, 145, 245, 0.6);
+  }
+  4% {
+    background-color: rgba(66, 165, 255, 0.1);
+  }
+  6% {
+    background-color: rgba(66, 165, 255, 0.6);
+  }
+  8% {
+    background-color: rgba(66, 165, 255, 0);
+  }
+  100% {
+    background-color: rgba(66, 165, 255, 0);
+  }
+}
+/* line 247, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .block {
+  display: inline-block;
+  width: 85px;
+  margin: 0 7px;
+  padding: 5px;
+}
+/* line 252, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .block .blue {
+  color: #11bc9f;
+}
+/* line 255, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .block .red {
+  color: #a94442;
+}
+/* line 258, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .top-container .chart .block p {
+  margin: 3px 0;
+  padding: 0;
+}
+/* line 270, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .middle-container {
+  background-color: #EFEFEF;
+  padding: 100px 250px;
+}
+/* line 273, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .middle-container .middle-catch {
+  font-size: 22px;
+  color: #42a5f5;
+}
+/* line 277, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .middle-container .middle-title {
+  font-size: 40px;
+}
+/* line 282, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .middle-container .upper {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+/* line 286, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .middle-container .upper .block {
+  width: 350px;
+  margin: 20px;
+}
+/* line 289, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .middle-container .upper .block .content {
+  padding: 0 15px;
+  text-align: left;
+}
+/* line 292, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .middle-container .upper .block .content .word {
+  font-weight: bold;
+  color: #2E2F30;
+}
+/* line 301, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band {
+  width: 100%;
+  position: relative;
+}
+/* line 305, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band > img {
+  height: 350px;
+  width: 100%;
+}
+/* line 309, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band .content {
+  color: #F7F7F7;
+  text-shadow: 2px 2px 9px gray;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(140, 140, 230, 0.2);
+}
+/* line 318, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band .content h1 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+/* line 322, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band .content h1 span {
+  font-size: 35px;
+}
+/* line 327, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band .content .steps {
+  display: flex;
+  justify-content: center;
+}
+/* line 330, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band .content .steps .step {
+  margin: 30px 100px;
+}
+/* line 332, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band .content .steps .step .mail {
+  margin: 40px 0;
+  width: 150px;
+  height: 100px;
+}
+/* line 337, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band .content .steps .step .pc {
+  margin: 5px;
+  width: 150px;
+  height: 170px;
+}
+/* line 343, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band .content .steps .step .pencil {
+  margin: 30px 0;
+  width: 120px;
+  height: 120px;
+}
+/* line 349, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .second-band .content .steps .step h4 {
+  font-size: 18px;
+}
+/* line 358, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .lower-container {
+  padding: 50px 250px;
+  background-color: #EFEFEF;
+}
+/* line 362, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .lower-container .top-text {
+  font-size: 22px;
+  color: #42a5f5;
+}
+/* line 367, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .lower-container .box-space {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 370, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .lower-container .box-space .box {
+  width: calc(calc(100% - 20px) / 3);
+  padding: 30px;
+}
+/* line 375, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .lower-container .box-space .box .inner {
+  box-shadow: 1px 1px 10px gray;
+}
+/* line 377, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .lower-container .box-space .box .inner > img {
+  width: 100%;
+}
+/* line 380, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .lower-container .box-space .box .inner .content {
+  padding: 30px;
+}
+/* line 382, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .lower-container .box-space .box .inner .content p {
+  padding: 20px;
+}
+/* line 385, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .lower-container .box-space .box .inner .content .button {
+  width: 90%;
+  font-size: 18px;
+  color: #F7F7F7;
+  height: 44px;
+  background-color: #039be5;
+}
+/* line 398, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .tool-contain {
+  padding: 50px 250px;
+}
+/* line 401, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .tool-contain .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+/* line 407, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .tool-contain .row .box {
+  text-align: left;
+  width: calc(calc(100% - 10px) / 2);
+  height: 110px;
+  padding: 80px 120px;
+}
+/* line 413, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .tool-contain .row .box h4 {
+  font-size: 18px;
+  color: #37474f;
+  font-weight: bold;
+}
+/* line 421, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .tool-contain .button {
+  width: 40%;
+  font-size: 18px;
+  color: #F7F7F7;
+  height: 44px;
+  background-color: #039be5;
+}
+/* line 430, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .news-contain {
+  padding: 70px 300px;
+  background-color: #EFEFEF;
+}
+/* line 433, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .news-contain h3 {
+  margin-bottom: 100px;
+}
+/* line 438, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .news-contain .news-box {
+  border-top: 1px solid gray;
+  width: 100%;
+  display: flex;
+  height: 180px;
+}
+/* line 443, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .news-contain .news-box .label-box {
+  font-size: 22px;
+  flex-basis: 30%;
+  background-color: #337ab7;
+  color: #EFEFEF;
+  line-height: 180px;
+}
+/* line 450, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .news-contain .news-box .title-box {
+  flex-basis: 70%;
+  text-align: left;
+  padding: 30px;
+}
+/* line 455, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .news-contain .news-box .title-box p {
+  font-size: 14px;
+}
+/* line 458, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.field .news-contain .news-box .title-box a {
+  font-size: 20px;
+}
+
+/* line 466, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.footer {
+  background-color: #2D3C4E;
+  padding: 100px;
+  width: 100%;
+}
+/* line 471, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.footer .row {
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 475, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.footer .row .box {
+  width: 250px;
+  color: gray;
+}
+/* line 478, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.footer .row .box li {
+  font-size: 12px;
+  line-height: 2;
+}
+/* line 482, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.footer .row .box h5 {
+  color: lightgray;
+  padding: 10px 0;
+  border-bottom: 1px lightgray solid;
+}
+/* line 487, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.footer .row .box > img {
+  width: 50%;
+  height: 40px;
+}
+/* line 491, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.footer .row .box p {
+  color: gray;
+  font-size: 11px;
+}
+
+/* line 500, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.trade-title-space {
+  background-color: #EFEFEF;
+  margin: 50px 50px 0;
+  padding: 0 300px;
+  width: 100%;
+  height: 50px;
+}
+/* line 506, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.trade-title-space .title-bar {
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  line-height: 50px;
+  background-color: white;
+  font-size: 20px;
+}
+/* line 513, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+.trade-title-space .title-bar > span {
+  color: #db8721;
+  font-size: 24px;
+}
+
+/* line 521, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app {
+  padding-bottom: 50px;
+  text-align: center;
+  background-image: url(/assets/back-0fc773a7d9aeea3fc678f711f9d807f9e06ead2efbea99018fcb3875ec0691cb.jpg);
+}
+/* line 525, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade {
+  margin: 50px 250px 0;
+  display: flex;
+  justify-content: center;
+}
+/* line 530, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade .box {
+  margin: 50px;
+  width: 30%;
+  border-radius: 2px;
+}
+/* line 535, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade .box .upper {
+  padding: 10px 35px 30px 35px;
+  text-align: center;
+}
+/* line 539, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade .box .upper .mask {
+  position: absolute;
+}
+/* line 543, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade .box .upper input {
+  height: 30px;
+  width: 50%;
+  padding: 3px;
+}
+/* line 549, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade .box .upper select {
+  height: 30px;
+  width: 60%;
+  padding: 3px;
+}
+/* line 555, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade .box .upper .price {
+  color: white;
+  padding: 10px 16px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+/* line 560, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade .box .upper .price span {
+  font-size: 12px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+/* line 567, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade .box .upper .button {
+  height: 50px;
+  font-size: 17px;
+  width: 80%;
+  color: white;
+  margin-top: 60px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px gray;
+}
+/* line 580, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade .box .box-title {
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+}
+/* line 587, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .easy-trade .error {
+  margin: 100px;
+  color: red;
+}
+/* line 593, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .red {
+  background-color: rgba(201, 48, 44, 0.6);
+}
+/* line 595, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .red > span {
+  color: #c9302c;
+}
+/* line 600, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .light-red {
+  text-align: center;
+  background-color: #ffe7e6;
+  padding: 0 20px;
+}
+/* line 604, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .light-red h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+  padding: 10px;
+}
+/* line 608, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .light-red h2 > span {
+  color: #c9302c;
+}
+/* line 614, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .middle-red {
+  background-color: #fdd6d5;
+}
+/* line 618, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .blue {
+  background-color: rgba(91, 192, 222, 0.6);
+}
+/* line 620, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .blue > span {
+  color: #5bc0de;
+}
+/* line 625, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .middle-blue {
+  background-color: rgba(194, 235, 248, 0.8);
+  box-shadow: 1px 2px 2px lightgray;
+}
+/* line 630, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .light-blue {
+  text-align: center;
+  padding: 0 20px;
+  background-color: #dbf6fe;
+}
+/* line 634, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .light-blue h2 {
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+/* line 638, /Users/yukisunami/Documents/work/git/play-pay2/play-pay/app/assets/stylesheets/tops.scss */
+#app .light-blue h2 > span {
+  color: #c9302c;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(157, 157, 157, 1);
+}
+
+body{
+    background: rgba(250,250,250,1);
+    color: rgba(80,80,80,1);
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul > li{
+    list-style: none;
+
+}
+
