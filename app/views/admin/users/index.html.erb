@@ -17,7 +17,7 @@
           </td>
           <td><%= user.meta_address %></td>
           <td><%= user.email %></td>
-          <% if user.trades.order(:id).last.try(:kind)==1 %>
+          <% if user.confirm_wating? %>
               <td class="warn-wait">有</td>
           <% else %>
               <td class="blue">無</td>

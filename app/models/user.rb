@@ -24,5 +24,13 @@ class User < ApplicationRecord
     end
   end
 
+  def confirm_wating?
+    trades = self.trades.all
+    trades.each do |trade|
+      return true if trade.status == 1
+    end
+    return false
+  end
+
 
 end
